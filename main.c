@@ -1,12 +1,10 @@
 #include <stdio.h>
+int all_files;
+extern void sub();
+
 int main(void)
 {
-int flag = 1;
-while(flag != 0)
-{
-    int y;
-    y = 3;
-    flag = 0;
-}
-y=4;
+    sub();
+    printf("%d\n",all_files);
+    return 0;
 }
