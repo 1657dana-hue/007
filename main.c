@@ -1,18 +1,15 @@
 #include <stdio.h>
 
-int inc(int counter);
-
-int main(void)
+int counter;
+void set_counter()
 {
-    int i=10;
-    printf("before i=%d\n",i);
-    inc(i);
-    printf("after i=%d\n",i);
-    return 0;
+    counter=20;
 
 }
-int inc(int counter)
+int main(void)
 {
-    counter++;
-    return counter;
+    printf("counter=%d\n",counter);
+    set_counter();
+    printf("counter=%d\n",counter);
+    return 0;
 }
